@@ -63,4 +63,13 @@ dependencies {
     implementation(libs.logging.interceptor)
 
     implementation(libs.androidx.paging.runtime.ktx)
+    implementation(libs.androidx.room.paging)
+
+    androidTestImplementation(libs.androidx.core.testing) //InstantTaskExecutorRule
+    androidTestImplementation(libs.kotlinx.coroutines.test) //TestDispatcher
+
+    testImplementation(libs.androidx.core.testing) // InstantTaskExecutorRule
+    testImplementation(libs.kotlinx.coroutines.test) //TestDispatcher
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.inline)
 }
