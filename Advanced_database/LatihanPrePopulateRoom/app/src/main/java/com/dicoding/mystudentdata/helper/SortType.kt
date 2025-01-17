@@ -1,4 +1,8 @@
 package com.dicoding.mystudentdata.helper
 
-class SortType {
+
+enum class SortType{
+    ASCENDING,
+    DESCENDING,
+    RANDOM
 }
